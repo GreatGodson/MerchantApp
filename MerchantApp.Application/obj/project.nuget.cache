@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "myPaY7Z11yA=",
+  "success": true,
+  "projectFilePath": "/Users/godson/backend/MerchantApp/MerchantApp.Application/MerchantApp.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/godson/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/Users/godson/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/godson/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "/Users/godson/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.6/microsoft.extensions.dependencyinjection.abstractions.9.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

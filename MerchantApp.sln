@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchantApp.Domain", "MerchantApp.Domain\MerchantApp.Domain.csproj", "{52FBC29D-6022-4EAC-BAC5-EDE20190B15A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchantApp.Application", "MerchantApp.Application\MerchantApp.Application.csproj", "{E31BD4C0-1037-4672-81F7-A8B0470917D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchantApp.Infrastructure", "MerchantApp.Infrastructure\MerchantApp.Infrastructure.csproj", "{8F1CA69E-A7E4-4C4D-8FB3-E1C14BDE3358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchantApp.API", "MerchantApp.API\MerchantApp.API.csproj", "{69DF3FAD-836B-4DD8-BF5F-FBD3FCB276C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchantApp.Tests", "MerchantApp.Tests\MerchantApp.Tests.csproj", "{00397223-BE8D-4641-AB45-41E7F1CBE7AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52FBC29D-6022-4EAC-BAC5-EDE20190B15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FBC29D-6022-4EAC-BAC5-EDE20190B15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FBC29D-6022-4EAC-BAC5-EDE20190B15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FBC29D-6022-4EAC-BAC5-EDE20190B15A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31BD4C0-1037-4672-81F7-A8B0470917D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31BD4C0-1037-4672-81F7-A8B0470917D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31BD4C0-1037-4672-81F7-A8B0470917D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31BD4C0-1037-4672-81F7-A8B0470917D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F1CA69E-A7E4-4C4D-8FB3-E1C14BDE3358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1CA69E-A7E4-4C4D-8FB3-E1C14BDE3358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1CA69E-A7E4-4C4D-8FB3-E1C14BDE3358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1CA69E-A7E4-4C4D-8FB3-E1C14BDE3358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69DF3FAD-836B-4DD8-BF5F-FBD3FCB276C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69DF3FAD-836B-4DD8-BF5F-FBD3FCB276C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69DF3FAD-836B-4DD8-BF5F-FBD3FCB276C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69DF3FAD-836B-4DD8-BF5F-FBD3FCB276C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00397223-BE8D-4641-AB45-41E7F1CBE7AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00397223-BE8D-4641-AB45-41E7F1CBE7AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00397223-BE8D-4641-AB45-41E7F1CBE7AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00397223-BE8D-4641-AB45-41E7F1CBE7AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/bin/Debug/net8.0/MerchantApp.Domain.deps.json
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/bin/Debug/net8.0/MerchantApp.Domain.dll
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/bin/Debug/net8.0/MerchantApp.Domain.pdb
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/MerchantApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/MerchantApp.Domain.AssemblyInfoInputs.cache
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/MerchantApp.Domain.AssemblyInfo.cs
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/MerchantApp.Domain.csproj.CoreCompileInputs.cache
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/MerchantApp.Domain.dll
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/refint/MerchantApp.Domain.dll
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/MerchantApp.Domain.pdb
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/ref/MerchantApp.Domain.dll

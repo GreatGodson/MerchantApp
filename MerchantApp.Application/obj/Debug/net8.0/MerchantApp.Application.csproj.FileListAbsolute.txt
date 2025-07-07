@@ -1,0 +1,15 @@
+/Users/godson/backend/MerchantApp/MerchantApp.Application/bin/Debug/net8.0/MerchantApp.Application.deps.json
+/Users/godson/backend/MerchantApp/MerchantApp.Application/bin/Debug/net8.0/MerchantApp.Application.dll
+/Users/godson/backend/MerchantApp/MerchantApp.Application/bin/Debug/net8.0/MerchantApp.Application.pdb
+/Users/godson/backend/MerchantApp/MerchantApp.Application/bin/Debug/net8.0/MerchantApp.Domain.dll
+/Users/godson/backend/MerchantApp/MerchantApp.Application/bin/Debug/net8.0/MerchantApp.Domain.pdb
+/Users/godson/backend/MerchantApp/MerchantApp.Application/obj/Debug/net8.0/MerchantApp.Application.csproj.AssemblyReference.cache
+/Users/godson/backend/MerchantApp/MerchantApp.Application/obj/Debug/net8.0/MerchantApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/godson/backend/MerchantApp/MerchantApp.Application/obj/Debug/net8.0/MerchantApp.Application.AssemblyInfoInputs.cache
+/Users/godson/backend/MerchantApp/MerchantApp.Application/obj/Debug/net8.0/MerchantApp.Application.AssemblyInfo.cs
+/Users/godson/backend/MerchantApp/MerchantApp.Application/obj/Debug/net8.0/MerchantApp.Application.csproj.CoreCompileInputs.cache
+/Users/godson/backend/MerchantApp/MerchantApp.Application/obj/Debug/net8.0/Merchant.2C98C5D6.Up2Date
+/Users/godson/backend/MerchantApp/MerchantApp.Application/obj/Debug/net8.0/MerchantApp.Application.dll
+/Users/godson/backend/MerchantApp/MerchantApp.Application/obj/Debug/net8.0/refint/MerchantApp.Application.dll
+/Users/godson/backend/MerchantApp/MerchantApp.Application/obj/Debug/net8.0/MerchantApp.Application.pdb
+/Users/godson/backend/MerchantApp/MerchantApp.Application/obj/Debug/net8.0/ref/MerchantApp.Application.dll

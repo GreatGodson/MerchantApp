@@ -9,3 +9,5 @@
 /Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/refint/MerchantApp.Domain.dll
 /Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/MerchantApp.Domain.pdb
 /Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/ref/MerchantApp.Domain.dll
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/MerchantApp.Domain.sourcelink.json
+/Users/godson/backend/MerchantApp/MerchantApp.Domain/obj/Debug/net8.0/MerchantApp.Domain.csproj.AssemblyReference.cache

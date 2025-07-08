@@ -1,26 +1,36 @@
 using MerchantApp.Application.Abstractions.Persistence;
 using MerchantApp.Domain.Entities;
 using MerchantApp.Infrastructure.Persistence.Data.DbContexts;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
 
 namespace MerchantApp.Infrastructure.Persistence.Repositories;
 
-public class MerchantRepository(MerchantDbContext dbContext) : IMerchantRepository
+public class MerchantRepository(UserManager<Merchant> userManager) : IMerchantRepository
 {
-    private readonly MerchantDbContext _dbContext = dbContext;
+
+    private readonly UserManager<Merchant> _userManager = userManager;
 
     public async Task<List<Merchant>> GetAllMerchantsAsync(CancellationToken cancellationToken)
     {
-        return await _dbContext.Merchants.ToListAsync(cancellationToken);
+        return await _userManager.Users.ToListAsync(cancellationToken);
     }
 
 
 
-    public async Task<Merchant> CreateMerchantsAsync(Merchant merchant, CancellationToken cancellationToken)
+    public async Task<Merchant> CreateMerchantsAsync(Merchant merchant, string password)
     {
-        await _dbContext.Merchants.AddAsync(merchant, cancellationToken);
-        await _dbContext.SaveChangesAsync(cancellationToken);
+        var t = await _userManager.CreateAsync(merchant, password);
+        Console.WriteLine("t is:", t);
+
+        if (!t.Succeeded)
+        {
+            var errors = string.Join("; ", t.Errors.Select(e => e.Description));
+            throw new InvalidOperationException($"User creation failed: {errors}");
+        }
+        // await _dbContext.SaveChangesAsync(cancellationToken);
         return merchant;
     }
 }

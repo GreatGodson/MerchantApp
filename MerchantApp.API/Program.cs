@@ -1,7 +1,10 @@
 using System.Text;
 using MerchantApp.Application.Extensions;
+using MerchantApp.Domain.Entities;
 using MerchantApp.Infrastructure.Extensions;
+using MerchantApp.Infrastructure.Persistence.Data.DbContexts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
@@ -30,6 +33,8 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 
+
+
 IConfigurationSection jwtSettings = builder.Configuration.GetSection("Jwt");
 string? secretKey = jwtSettings["Key"];
 
@@ -47,6 +52,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey ?? ""))
         };
     });
+
 
 
 

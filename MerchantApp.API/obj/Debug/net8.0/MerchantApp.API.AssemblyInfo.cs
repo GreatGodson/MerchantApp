@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MerchantApp.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a7b8e8ced2ccb8a97196412dc5f6fdf32b577cc")]
 [assembly: System.Reflection.AssemblyProductAttribute("MerchantApp.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MerchantApp.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

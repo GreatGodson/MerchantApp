@@ -15,3 +15,4 @@
 /Users/godson/backend/MerchantApp/MerchantApp.Infrastructure/obj/Debug/net8.0/refint/MerchantApp.Infrastructure.dll
 /Users/godson/backend/MerchantApp/MerchantApp.Infrastructure/obj/Debug/net8.0/MerchantApp.Infrastructure.pdb
 /Users/godson/backend/MerchantApp/MerchantApp.Infrastructure/obj/Debug/net8.0/ref/MerchantApp.Infrastructure.dll
+/Users/godson/backend/MerchantApp/MerchantApp.Infrastructure/obj/Debug/net8.0/MerchantApp.Infrastructure.sourcelink.json

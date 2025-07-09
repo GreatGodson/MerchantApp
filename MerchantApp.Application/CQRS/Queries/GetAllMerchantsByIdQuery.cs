@@ -4,4 +4,7 @@ using MerchantApp.Domain.Entities;
 
 
 namespace MerchantApp.Application.CQRS.Queries;
-public class GetAllMerchantsQuery : IRequest<ApiResponse<List<Merchant>>> { }
+public class GetMerchantByIdQuery : IRequest<ApiResponse<Merchant>>
+{
+    public string Id { get; set; } = string.Empty;
+}

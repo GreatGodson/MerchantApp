@@ -1,9 +1,7 @@
 using MerchantApp.Application.Abstractions.Persistence;
 using MerchantApp.Domain.Entities;
-using MerchantApp.Infrastructure.Persistence.Data.DbContexts;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
 
 namespace MerchantApp.Infrastructure.Persistence.Repositories;
@@ -18,19 +16,32 @@ public class MerchantRepository(UserManager<Merchant> userManager) : IMerchantRe
         return await _userManager.Users.ToListAsync(cancellationToken);
     }
 
-
-
     public async Task<Merchant> CreateMerchantsAsync(Merchant merchant, string password)
     {
-        var t = await _userManager.CreateAsync(merchant, password);
-        Console.WriteLine("t is:", t);
-
-        if (!t.Succeeded)
-        {
-            var errors = string.Join("; ", t.Errors.Select(e => e.Description));
-            throw new InvalidOperationException($"User creation failed: {errors}");
-        }
-        // await _dbContext.SaveChangesAsync(cancellationToken);
+        await _userManager.CreateAsync(merchant, password);
         return merchant;
+    }
+
+    public async Task<Merchant?> GetMerchantByIdAsync(string merchantId)
+    {
+        return await _userManager.Users
+            .FirstOrDefaultAsync(m => m.Id == merchantId);
+    }
+
+    public async Task<bool> DeleteMerchantByIdAsync(Merchant merchant)
+    {
+        var result = await _userManager.DeleteAsync(merchant);
+        return result.Succeeded;
+    }
+
+    public async Task UpdateMerchantAsync(Merchant merchant)
+    {
+        var result = await _userManager.UpdateAsync(merchant);
+
+        if (!result.Succeeded)
+        {
+            var errors = string.Join("; ", result.Errors.Select(e => e.Description));
+            throw new InvalidOperationException($"Failed to update merchant: {errors}");
+        }
     }
 }

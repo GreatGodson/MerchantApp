@@ -1,15 +1,17 @@
 using MediatR;
 using MerchantApp.Application.Abstractions.Persistence;
+using MerchantApp.Application.Abstractions.Services;
 using MerchantApp.Application.Common;
 using MerchantApp.Application.CQRS.Commands;
 using MerchantApp.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 namespace MerchantApp.Application.CQRS.CommandHandlers;
-public class CreateMerchantHandler(IMerchantRepository merchantRepository, UserManager<Merchant> userManager) : IRequestHandler<CreateMerchantCommand, ApiResponse<Merchant>>
+public class CreateMerchantHandler(IMerchantRepository merchantRepository, UserManager<Merchant> userManager, ICountryValidationService countryValidationService) : IRequestHandler<CreateMerchantCommand, ApiResponse<Merchant>>
 {
 
     private readonly IMerchantRepository _merchantRepository = merchantRepository;
     private readonly UserManager<Merchant> _userManager = userManager;
+    private readonly ICountryValidationService _countryValidationService = countryValidationService;
 
 
     public async Task<ApiResponse<Merchant>> Handle(CreateMerchantCommand request, CancellationToken cancellationToken)
@@ -26,6 +28,13 @@ public class CreateMerchantHandler(IMerchantRepository merchantRepository, UserM
             return ApiResponse<Merchant>.BadRequest("User with this email already exists.");
         }
 
+
+        bool isCountryValid = await _countryValidationService.IsValidCountryAsync(request.Country, cancellationToken);
+        if (!isCountryValid)
+        {
+            return ApiResponse<Merchant>.BadRequest("Invalid country name provided.");
+        }
+
         Merchant merchant = new()
         {
             BusinessName = request.BusinessName,
@@ -33,6 +42,7 @@ public class CreateMerchantHandler(IMerchantRepository merchantRepository, UserM
             UserName = email,
             PhoneNumber = request.PhoneNumber,
             PasswordHash = request.Password,
+            Country = request.Country,
 
         };
 

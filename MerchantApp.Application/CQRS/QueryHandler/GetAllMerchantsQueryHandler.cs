@@ -17,4 +17,6 @@ public class GetAllMerchantsQueryHandler(IMerchantRepository merchantRepository)
         return ApiResponse<List<Merchant>>.Success(merchants);
 
     }
+
+    
 }

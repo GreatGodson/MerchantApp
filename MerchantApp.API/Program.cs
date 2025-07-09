@@ -1,8 +1,10 @@
 using System.Text;
+using MerchantApp.Application.Abstractions.Services;
 using MerchantApp.Application.Extensions;
 using MerchantApp.Domain.Entities;
 using MerchantApp.Infrastructure.Extensions;
 using MerchantApp.Infrastructure.Persistence.Data.DbContexts;
+using MerchantApp.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
@@ -32,6 +34,7 @@ builder.Services.AddSwaggerGen(options =>
     options.OperationFilter<SecurityRequirementsOperationFilter>();
 });
 
+builder.Services.AddHttpClient<ICountryValidationService, CountryValidationService>();
 
 
 

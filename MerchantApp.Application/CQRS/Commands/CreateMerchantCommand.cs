@@ -14,6 +14,7 @@ public class CreateMerchantCommand : IRequest<ApiResponse<Merchant>>
 
     public string PhoneNumber { get; set; } = string.Empty;
 
+    public string Country { get; set; } = string.Empty;
 
     public string Password { get; set; } = string.Empty;
 }

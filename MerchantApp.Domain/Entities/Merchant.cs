@@ -13,6 +13,7 @@ public class Merchant : IdentityUser
     public string BusinessName { get; set; } = string.Empty;
 
     [Required]
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public MerchantStatus Status { get; set; } = MerchantStatus.Pending;
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

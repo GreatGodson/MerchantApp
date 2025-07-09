@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MerchantApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8b6cf0da46aae3dc47493fb3e34680374799248")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9644bdf46addb47925c1a5775a30f1f3eec4476")]
 [assembly: System.Reflection.AssemblyProductAttribute("MerchantApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MerchantApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
